@@ -36,15 +36,13 @@ All experiments use NSynth (isolated musical notes, 4 s, 16 kHz).
 
 *The partitions the two methods produce on the same clip. The fixed grid uses identical cells everywhere; the adaptive cells vary in size by more than an order of magnitude and follow the structure of the note.*
 
-## What the results do not claim
-
-- **The advantage is counted in tokens, not in transmitted bits.** To decode, the partition itself must be sent too; at a realistic coding cost the advantage in bits shrinks to between 1.0× and 1.6×. The thesis makes no claim that this model compresses better than a neural codec.
-- **NSynth contains isolated notes**, not polyphonic, mixed music.
-- **The partition is adaptive, the rate barely is**: the token count varies by only 9–12% across clips.
-
 ## Code
 
 The implementation is not public at the moment.
+
+## License
+
+The thesis is released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): you may share and adapt it, with credit to the author, for non-commercial purposes.
 
 ## Citation
 
